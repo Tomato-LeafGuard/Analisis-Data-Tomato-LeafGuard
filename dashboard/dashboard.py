@@ -7,7 +7,7 @@ import sys
 
 # Fungsi install library untuk mengurangi error saat deploy ke streamlit cloud
 def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package, "--user"])
 
 try:
     import matplotlib.pyplot as plt
